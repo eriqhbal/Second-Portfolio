@@ -5,19 +5,20 @@ import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
 import { Home } from "./Pages";
 
 // Style SASS
-import './scss/main.scss';
+import "./scss/main.scss";
 
 // Components
-import { Sidebar } from "./Components";
+import { Sidebar, Header } from "./Components";
 
 const App = () => {
   return (
     <div className="main-div">
       <div className="side">
-        <Sidebar/>
+        <Sidebar />
       </div>
       <div>
         <BrowserRouter>
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

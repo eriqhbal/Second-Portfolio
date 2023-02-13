@@ -34,3 +34,21 @@ button {
     @include shadow;
   }
 }
+
+$colors: (
+   github: #18122B,
+   hackerank: #1F8A70,
+   linkedin: #8EA7E9,
+   instagram: #F55050
+);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    @include icons(50px, 50px, #ff43cb, 18px, 50px, $primary);
+    background: $color;
+  }
+}
+
+.button {
+  @include button($indigo, map-get($sizes, 2xl), map-get($sizes, sm), map-get($sizes, sm), $primary);
+}

@@ -1,8 +1,7 @@
 import React from 'react';
 
 // Icons
-import { FiDownloadCloud } from 'react-icons/fi';
-import { RiMoneyCnyCircleLine } from 'react-icons/ri';
+import { AiFillFileText } from 'react-icons/ai';
 
 // Images
 import Profil from '../Assets/Images/Profil.png'
@@ -52,16 +51,12 @@ const Sidebar = () => {
                   </div>
                </div>
                <div className="sideContent-bottom-buttonGroup">
-                  <button type="" className='sm-button'>
-                     <span>
-                        <FiDownloadCloud className="button_bicon" />
-                     </span>
-                  </button>
                   <button type="" className='button'>
-                     <span>
-                        <RiMoneyCnyCircleLine className="button_bicon" />
-                        <span>HIRE ME</span>
-                     </span>
+                     <div>
+                        <span>{<AiFillFileText/>}</span>
+                        <span className='span-resume'>RESUME</span>
+                     </div>
+                     
                   </button>
                </div>
             </div>

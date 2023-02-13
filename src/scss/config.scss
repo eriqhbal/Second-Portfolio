@@ -100,7 +100,7 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 }
 
 $sizes: (
-  "sm": 50px,
+  "sm": 45px,
   "md": 60px,
   "lg": 70px,
   "2xl": 160px,
@@ -138,6 +138,7 @@ $sizes: (
   font-size: $size;
   line-height: $line;
   padding: 5px;
+  margin: auto 3px;
   text-align: center;
   transition: all ease 300ms;
 

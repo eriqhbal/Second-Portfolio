@@ -68,7 +68,7 @@ export const socialIcon = [
   {
     id: 2,
     icon: <FaHackerrank />,
-    class: "Hackerrank",
+    class: "hackerank",
   },
   {
     id: 3,
