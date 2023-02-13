@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*@function icon($size, $line-height) {
+  @return map-get($sizes, $size);
+  @return map-get($sizes, $line-height);
+}
+@mixin icon {
+  width: map-get($sizes, sm);
+  height: map-get($sizes, sm);
+  background: $indigo;
+  color: $white;
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  font-size: 18px;
+  line-height: map-get($sizes, sm);
+  padding: 5px;
+  text-align: center;
+  transition: all ease 300ms;
+  &:hover {
+    background: $primary;
+    cursor: pointer;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+*//*# sourceMappingURL=config.css.map */

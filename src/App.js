@@ -4,6 +4,9 @@ import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
 // Pages
 import { Home } from "./Pages";
 
+// Style SASS
+import './scss/main.scss';
+
 // Components
 import { Sidebar } from "./Components";
 
