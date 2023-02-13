@@ -2,26 +2,35 @@
 @import "side";
 
 body {
-   background: url("../Assets/Images/bg.png") no-repeat fixed top center $blue;
-   color: set-text-color($white);
-   font-family: $font-family-sans-serif;
+  background: url("../Assets/Images/bg.png") no-repeat fixed top center $blue;
+  color: set-text-color($white);
+  font-family: $font-family-sans-serif;
 }
 
 a {
-   @include defaultValue;
-   @include trsansition;
+  @include defaultValue;
+  @include trsansition;
 
-   &:hover {
-      color: $primary;
-   }
+  &:hover {
+    color: $primary;
+  }
 }
 
-ul, button {
-   @include defaultValue;
+ul,
+button {
+  @include defaultValue;
 }
 
 .main-div {
-   @include flex(space-between, center, center);
-   width: $w-4xl;
-   margin: auto;
+  @include flex(space-between, none, none);
+  width: $w-4xl;
+  margin: auto;
+  padding: $p-xl;
+
+  .side {
+    width: $w-sm;
+    background-color: $lightblue;
+    height: 105vh;
+    @include shadow;
+  }
 }

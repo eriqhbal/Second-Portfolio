@@ -3,15 +3,15 @@ import {
   AiOutlineCalculator,
   AiOutlineSetting,
   AiOutlineShareAlt,
+  AiOutlineGithub,
+  AiFillLinkedin,
 } from "react-icons/ai";
 import { RiUserLine } from "react-icons/ri";
 import {
   FaRegLightbulb,
-  FaFacebookF,
-  FaTwitter,
   FaInstagram,
-  FaDribbble,
   FaShippingFast,
+  FaHackerrank,
 } from "react-icons/fa";
 import { CgCardClubs } from "react-icons/cg";
 import { TbMailOpened } from "react-icons/tb";
@@ -62,18 +62,18 @@ export const menu = [
 export const socialIcon = [
   {
     id: 1,
-    icon: <FaFacebookF />,
-    class: "facebook",
+    icon: <AiOutlineGithub />,
+    class: "github",
   },
   {
     id: 2,
-    icon: <FaTwitter />,
-    class: "twitter",
+    icon: <FaHackerrank />,
+    class: "Hackerrank",
   },
   {
     id: 3,
-    icon: <FaDribbble />,
-    class: "dribbble",
+    icon: <AiFillLinkedin />,
+    class: "linkedin",
   },
   {
     id: 4,

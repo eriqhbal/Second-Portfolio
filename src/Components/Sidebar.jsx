@@ -13,13 +13,11 @@ import { socialIcon, side } from '../Data/data';
 const Progress = ({ title, done, back }) => {
    return (
       <div className='progress'>
-         <div className={`progress done ${back}`} style={{ opacity: 1, width: `${done}%` }}>
-         </div>
          <div className='progress-title'>
-            <h4>{title}.</h4>
+            <h4>{title}</h4>
          </div>
          <div className='progress-num'>
-            <h4>{done}.</h4>
+            <h4>value : {done}.</h4>
          </div>
       </div>
    )
@@ -31,7 +29,7 @@ const Sidebar = () => {
          <section className='sideContent'>
             <div className='sideContent-top'>
                <div className='sideContent-top-image'>
-                  <img style={{ width: "10em" }} src={Profil} alt="/main-image" />
+                  <img style={{ width: "10em", }} src={Profil} alt="/main-image" />
                   <div className="sideContent-top-image-name">
                      <h3>Zuleriqhbal Hendri</h3>
                      <span>Junior Developer</span>
