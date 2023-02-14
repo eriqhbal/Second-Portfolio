@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaShippingFast,
   FaHackerrank,
+  FaDiscord,
 } from "react-icons/fa";
 import { CgCardClubs } from "react-icons/cg";
 import { TbMailOpened } from "react-icons/tb";
@@ -19,7 +20,7 @@ import { GoMail } from "react-icons/go";
 import { GiChart } from "react-icons/gi";
 import { FiLayers } from "react-icons/fi";
 import { BsPhone } from "react-icons/bs";
-import { BsPhoneVibrate, BsVectorPen } from "react-icons/bs";
+import { BsVectorPen } from "react-icons/bs";
 import {
   MdShareLocation,
   MdLocalShipping,
@@ -108,23 +109,23 @@ export const about = [
     deatils: [
       {
         text: "My Name",
-        value: "K. Melissa Caroll",
+        value: "Zuleriqhbal Hendri",
         icon: <RiUserLine />,
       },
       {
         text: "My Age",
-        value: "32 Years 241 Days",
+        value: "22 years old",
         icon: <AiOutlineCalculator />,
       },
-      { text: "Email Address", value: "k.melissa@caroll.me", icon: <GoMail /> },
+      { text: "Email Address", value: "eriqhbal@gmail.com", icon: <GoMail /> },
       {
-        text: "Phone Number",
-        value: "1.800.987.6987",
-        icon: <BsPhoneVibrate />,
+        text: "Discord Account",
+        value: "Zuleriqhbal Hendri#2691",
+        icon: <FaDiscord />,
       },
       {
         text: "Address",
-        value: "Click Here to View Map.",
+        value: "Indonesia, Riau.",
         icon: <MdShareLocation />,
       },
     ],

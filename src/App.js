@@ -8,7 +8,7 @@ import { Home } from "./Pages";
 import "./scss/main.scss";
 
 // Components
-import { Sidebar, Header } from "./Components";
+import { Sidebar, Header, About } from "./Components";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
         <BrowserRouter>
           <Header />
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
           </Routes>
         </BrowserRouter>
       </div>

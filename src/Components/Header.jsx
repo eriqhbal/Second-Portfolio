@@ -18,7 +18,7 @@ const Header = () => {
             <ul className={`${mobile ? `nav-menu` : `menu`}`}>
                {menu.map(item => {
                   return <li key={item.id}>
-                     <Link to={item.url} onClick={() => {}} classname="link">
+                     <Link to={item.url} onClick={() => {}} className="link">
                         <p>{item.text}</p>
                         <span>{item.icon}</span>
                      </Link>
