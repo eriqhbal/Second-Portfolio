@@ -3,7 +3,7 @@ import React from 'react'
 const Info = ({items, Heading}) => {
   return (
     <div>
-      <Heading title="about info"/>
+      <Heading title="About Me"/>
       <div className="about-details-content">
         {items.deatils.map(item => {
           return <div className='about-details-content-box'>

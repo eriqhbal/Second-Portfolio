@@ -6,7 +6,7 @@ import { Info, Bio, Price, Slider, Services, Heading } from './little-pages'
 
 const About = () => {
   return (
-    <div>
+    <div className='container'>
       <section className='about'>
         {about.map(item => {
           return <div>

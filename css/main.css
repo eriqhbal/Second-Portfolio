@@ -161,72 +161,104 @@ ul li span {
   font-size: 65px;
 }
 
-.about_details_content {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*@function icon($size, $line-height) {
+  @return map-get($sizes, $size);
+  @return map-get($sizes, $line-height);
+}
+@mixin icon {
+  width: map-get($sizes, sm);
+  height: map-get($sizes, sm);
+  background: $indigo;
+  color: $white;
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  font-size: 18px;
+  line-height: map-get($sizes, sm);
+  padding: 5px;
+  text-align: center;
+  transition: all ease 300ms;
+  &:hover {
+    background: $primary;
+    cursor: pointer;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+*/
+.about-details {
+  padding: 10px;
+}
+.about-details-content {
+  margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  grid-gap: 30px;
   margin-bottom: 50px;
 }
-.about_details_content_box {
+.about-details-content-box {
   display: flex;
   justify-content: none;
   align-items: center;
   text-align: none;
 }
-.about_details_content_box_text {
+.about-details-content-box-text {
   margin-left: 20px;
 }
-.about_details_content_box_text h4 {
+.about-details-content-box-text h4 {
   font-weight: 500;
 }
-.about_details_content_box_text span {
+.about-details-content-box-text p {
   color: #808080;
 }
-.about_details_bio {
+.about-details-bio {
   margin: 50px 0;
 }
-.about_details_bio_box {
+.about-details-bio-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
-.about_details_bio_box p {
+.about-details-bio-box p {
   color: #808080;
   font-size: 14px;
   line-height: 2;
 }
-.about_services_boxs {
+.about-services-boxs {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 30px;
 }
-.about_services_boxs .card {
+.about-services-boxs .card {
   padding: 20px;
   background: #292633;
   border-bottom: 5px solid transparent;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-.about_services_boxs .card p {
+.about-services-boxs .card p {
   font-size: 15px;
   line-height: 2;
   margin: 10px 0;
   color: #808080;
 }
-.about_services_boxs .card h3 {
+.about-services-boxs .card h3 {
   margin: 5px 0;
   font-weight: 500;
   font-size: 17px;
 }
-.about_services_boxs .card label {
+.about-services-boxs .card label {
   color: #01d85f;
 }
-.about_services_boxs .card:hover {
+.about-services-boxs .card:hover {
   border-radius: 2px 2px 10px 10px;
   border-bottom-color: #7635f5;
   box-shadow: -3px 2px 21px 4px rgb(32, 30, 41);
 }
-.about_services_boxs .icon {
+.about-services-boxs .icon {
   width: 70px;
   height: 70px;
   background: #201e29;
@@ -240,20 +272,20 @@ ul li span {
   transition: all ease 300ms;
   color: #7635f5;
 }
-.about_services_boxs .icon:hover {
+.about-services-boxs .icon:hover {
   background: #7635f5;
   cursor: pointer;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
-.about_services_boxs .icon:hover {
+.about-services-boxs .icon:hover {
   color: #fff;
 }
-.about_sider {
+.about-sider {
   position: relative;
   margin: 50px 0;
   width: 100%;
 }
-.about_sider_content .card {
+.about-sider-content .card {
   padding: 30px 0;
   background: none;
   border-bottom: 5px solid transparent;
@@ -265,25 +297,25 @@ ul li span {
   text-align: none;
   position: relative;
 }
-.about_sider_content .card p {
+.about-sider-content .card p {
   font-size: 15px;
   line-height: 2;
   margin: 10px 0;
   color: #808080;
 }
-.about_sider_content .card h3 {
+.about-sider-content .card h3 {
   margin: 5px 0;
   font-weight: 500;
   font-size: 17px;
 }
-.about_sider_content .card label {
+.about-sider-content .card label {
   color: #01d85f;
 }
-.about_sider_content .card img {
+.about-sider-content .card img {
   border-radius: 50%;
   margin-right: 30px;
 }
-.about_sider_content .card::after {
+.about-sider-content .card::after {
   content: "❝";
   position: absolute;
   display: flex;
@@ -294,20 +326,20 @@ ul li span {
   bottom: 20px;
   width: 60px;
   height: 60px;
-  background: url("/images/back.png");
+  background: url("../Assets/Images/back.png");
   background-size: contain;
 }
-.about_sider_content .card p {
+.about-sider-content .card p {
   font-style: italic;
 }
-.about_sider_content_slideButton {
+.about-sider-content-slideButton {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   left: 0;
 }
-.about_sider_content_slideButton button {
+.about-sider-content-slideButton button {
   float: right;
   width: 40px;
   height: 40px;
@@ -324,17 +356,17 @@ ul li span {
   margin: 5px;
   border-radius: 5px;
 }
-.about_sider_content_slideButton button:hover {
+.about-sider-content-slideButton button:hover {
   background: #7635f5;
   cursor: pointer;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
-.about_price_content {
+.about-price-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
 }
-.about_price .cards {
+.about-price .cards {
   padding: 30px;
   background: #292633;
   border-bottom: 5px solid transparent;
@@ -342,28 +374,28 @@ ul li span {
   cursor: pointer;
   text-align: center;
 }
-.about_price .cards p {
+.about-price .cards p {
   font-size: 15px;
   line-height: 2;
   margin: 10px 0;
   color: #808080;
 }
-.about_price .cards h3 {
+.about-price .cards h3 {
   margin: 5px 0;
   font-weight: 500;
   font-size: 17px;
 }
-.about_price .cards label {
+.about-price .cards label {
   color: #01d85f;
 }
-.about_price .cards i {
+.about-price .cards i {
   font-size: 80px;
   color: #7635f5;
 }
-.about_price .cards h1 {
+.about-price .cards h1 {
   font-size: 40px;
 }
-.about_price .cards button {
+.about-price .cards button {
   position: relative;
   height: 45px;
   background: none;
@@ -382,17 +414,17 @@ ul li span {
   text-decoration: underline;
   letter-spacing: 1px;
 }
-.about_price .cards button span {
+.about-price .cards button span {
   margin-left: 10px;
   position: relative;
   z-index: 99;
 }
-.about_price .cards button_bicon {
+.about-price .cards button_bicon {
   font-size: 22px;
   position: relative;
   z-index: 99;
 }
-.about_price .cards button::after {
+.about-price .cards button::after {
   content: "";
   width: 0;
   height: 100%;
@@ -405,14 +437,14 @@ ul li span {
   transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   border-radius: 2px;
 }
-.about_price .cards button:hover:after {
+.about-price .cards button:hover:after {
   width: 100%;
   left: 0;
   right: auto;
   color: #fff;
   border-radius: 2px;
 }
-.about_price .cards button .icons {
+.about-price .cards button .icons {
   font-size: 20px;
 }
 
@@ -592,4 +624,58 @@ button {
   right: auto;
   color: #fff;
   border-radius: 2px;
+}
+
+.container, .pages {
+  box-shadow: -3px 2px 21px 4px rgb(32, 30, 41);
+  padding: 30px;
+  background: #201e29;
+  margin-top: 30px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 15px;
+  color: #01d85f;
+  line-height: 0.8;
+  margin: 0 0 35px;
+  position: relative;
+  padding: 0 0 13px;
+  text-transform: capitalize;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 7px;
+  top: 30px;
+  background-image: url("../Assets/Images/heading.png");
+  background-size: contain;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #7635f5;
+  color: white;
+  border-radius: 70% 30% 30% 70%/70% 70% 30% 30%;
+  font-size: 22px;
+  line-height: 60px;
+  padding: 5px;
+  margin: auto 3px;
+  text-align: center;
+  transition: all ease 300ms;
+}
+.icon:hover {
+  background: #01d85f;
+  cursor: pointer;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+.pages {
+  height: 90vh;
+  font-size: 50px;
+  color: #01d85f;
 }/*# sourceMappingURL=main.css.map */

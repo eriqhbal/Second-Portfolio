@@ -1,7 +1,11 @@
+@import "config";
+
 .about {
   &-details {
+    padding: 10px;
     &-content {
-      @include grids(2, 1fr, 40px);
+      margin-top: 10px;
+      @include grids(2, 1fr, 30px);
       margin-bottom: 50px;
       &-box {
         @include flex(none, center, none);

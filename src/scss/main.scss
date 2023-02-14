@@ -58,3 +58,42 @@ $colors: (
 .button {
   @include button($indigo, map-get($sizes, 2xl), map-get($sizes, sm), map-get($sizes, sm), $primary);
 }
+
+.container {
+  @include shadow;
+  padding: 30px;
+  background: $black;
+  margin-top: 30px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 15px;
+  color: $primary;
+  line-height: 0.8;
+  margin: 0 0 35px;
+  position: relative;
+  padding: 0 0 13px;
+  text-transform: capitalize;
+
+  &::after {
+    content: "";
+    @include absolute;
+    width: 50px;
+    height: 7px;
+    top: 30px;
+    background-image: url("../Assets/Images/heading.png");
+    background-size: contain;
+  }
+}
+
+.icon {
+  @include icons(60px, 60px, $indigo, 22px, 60px, $primary);
+}
+
+.pages {
+  @extend .container;
+  height: 90vh;
+  font-size: 50px;
+  color: $primary;
+}

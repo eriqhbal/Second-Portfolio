@@ -131,13 +131,19 @@ export const about = [
     ],
     bio: [
       {
-        para1:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida risus commodo. Quis ipsum suspendisse ultrices gravida.",
-        para2:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        para3:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        images: "./images/bio.png",
+        title: "Competitive Programming UITM",
+        years: "2021",
+        position: "none",
+      },
+      {
+        title: "Competitive Programming UGM",
+        years: "2022",
+        position: "Big 10",
+      },
+      {
+        title: "Hackathon",
+        years: "2021",
+        position: "Big 50 over 500 Participant",
       },
     ],
 
