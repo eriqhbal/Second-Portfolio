@@ -1,5 +1,6 @@
 @import "config";
 @import "side";
+@import "header";
 
 body {
   background: url("../Assets/Images/bg.png") no-repeat fixed top center $blue;
@@ -33,6 +34,10 @@ button {
     height: 105vh;
     @include shadow;
   }
+}
+
+.main {
+  width: $w-2xl;
 }
 
 $colors: (

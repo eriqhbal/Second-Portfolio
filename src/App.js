@@ -16,11 +16,11 @@ const App = () => {
       <div className="side">
         <Sidebar />
       </div>
-      <div>
+      <div className="main">
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
           </Routes>
         </BrowserRouter>
       </div>

@@ -1,0 +1,41 @@
+header {
+   @include shadow();
+   @include flex(space-between, start, center);
+   background-color: $black;
+  
+}
+
+ul {
+   width: $w-4xl;
+   display: flex;
+   align-items: center;
+   padding: 30px;
+
+   li {
+      margin-right: $s;
+      position: relative;
+      a{
+         text-transform: capitalize;
+         font-size: 15px;
+         font-weight: 500;
+         @include zindex;
+      }
+      span {
+         color: #3F979B;
+         @include absolute;
+         font-size: 40px;
+         top: -15px;
+         left: -20px;
+         opacity: 0.3;
+      }
+   }
+}
+
+.icons {
+   @include flex(center, none, none);
+   width: $s;
+   background: $lightdark;
+   button {
+      font-size: 65px;
+   }
+}
